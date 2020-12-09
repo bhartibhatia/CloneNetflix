@@ -12,7 +12,7 @@ useEffect(
 async function fetchData()
 {
 const request = await axios.get(props.fetchUrl)
-console.log("GetRequest",request.data.results);
+// console.log("GetRequest",request.data.results);
 setMovies(request.data.results);
 return request;
 }
@@ -21,7 +21,7 @@ console.log(error)
 })
     },[props.fetchUrl]
 )
-console.log(movies);
+// console.log(movies);
     return (
         <div className="row">
             <h3>{props.title}</h3>
