@@ -1,4 +1,4 @@
-const API_KEY ="47fb9cba881be41e056d1b89d3fd3a5b"
+const API_KEY =""
 
 const requests={
     fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
