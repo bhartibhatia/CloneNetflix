@@ -24,7 +24,7 @@ console.log(error)
 // console.log(movies);
     return (
         <div className="row">
-            <h3>{props.title}</h3>
+            <h3 >{props.title}</h3>
             <div className="row_poster">
                {
                    movies.map(
