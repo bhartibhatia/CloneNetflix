@@ -8,6 +8,7 @@ function Banner() {
 
   useEffect(() => {
     async function getMovieData() {
+
       const request = await axios.get(requests.fetchNetflixOriginals);
       setMovies(
         request.data.results[
@@ -26,6 +27,7 @@ function Banner() {
    function truncate(str,n) {
     return str?.length > n ? str.substr(0, n-1 ) + "..." : str;
 }
+console.log("checking",movies?.backdrop_path)
   return (
     <div>
       <header
